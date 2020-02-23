@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/frozendreams"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context=".BuatBiodataActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Nomor"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_above="@+id/textView1"
+        android:inputType="number"
+        android:maxLength="10">
+        <requestFocus/>
+        ></EditText>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView2"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    android:layout_alignLeft="@+id/editText1"
+    android:layout_below="@+id/editText1"
+    android:layout_marginTop="10dp"
+    android:text="Nama"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/textView2"
+        android:inputType="text"
+        android:maxLength="20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="10dp"
+        android:text="Tanggal Lahir"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:hint=""
+        android:editable="false"
+        android:focusable="false"
+        android:drawableRight="@drawable/calendar"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_below="@+id/textView3"
+        android:inputType="date"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_below="@+id/textView4"
+        android:inputType="text"
+        android:maxLength="1"
+        android:hint="L atau P"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="10dp"
+        android:text="Alamat"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_below="@+id/textView5"
+        android:inputType="text"
+        android:maxLength="100" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button"
+        android:backgroundTint="#BBDCF7"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/simpan"
+        android:text="SIMPAN"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/button2"
+        android:background="@drawable/button"
+        android:backgroundTint="#BBDCF7"
+        android:textColor="#000"
+        android:layout_alignRight="@+id/editText5"
+        android:layout_alignEnd="@+id/editText5"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableLeft="@drawable/kembali"
+        android:text="KEMBALI"/>
+</LinearLayout>
+</LinearLayout>
